@@ -337,3 +337,4 @@ fiplugins=(fasd)
 fi	
 
 
+export PATH="/usr/local/bin:$PATH"
