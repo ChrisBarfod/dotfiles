@@ -237,17 +237,6 @@ POWERLEVEL9K_LOAD_NORMAL_VISUAL_IDENTIFIER_COLOR="green"
 # Next highest folder with .git
 alias tl='git rev-parse --show-toplevel'
 
-# Rails Aliases
-alias b='bundle'
-alias be='bundle exec'
-alias ber='bundle exec rails'
-alias berg='bundle exec rails generate'
-alias bert='bundle exec rails test'
-alias berc='bundle exec rails console'
-alias bers='bundle exec rails server'
-alias berdb='bundle exec rails dbconsole'
-alias berr='bundle exec rails routes'
-
 # Git Aliases
 alias g='git'
 alias gl='git log'
@@ -272,10 +261,6 @@ alias tf='tail -f'
 #alias -g G='| grep --color'
 alias grep='() { $(whence -p grep) --color=auto $@ }'
 alias egrep='() { $(whence -p egrep) --color=auto $@ }'
-
-# Ruby
-alias irb="pry"
-
 
 export KEYTIMEOUT=1
 
