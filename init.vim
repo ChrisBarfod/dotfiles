@@ -1,4 +1,12 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.config/nvim/bundle')
+
+Plug 'vimwiki/vimwiki'
 
 " Interface
 Plug 'airblade/vim-gitgutter'
@@ -45,7 +53,7 @@ Plug 'dart-lang/dart-vim-plugin' "Syntax highlighting for Dart
 Plug 'ryanoasis/vim-devicons' "Icons == always load this last ==
 
 " execute :source% once file saved, then :PlugInstall || :PlugUpdate to 
-" install or update new plugins respectively
+" install or update new plugins. 
 
 call plug#end()
 
@@ -96,7 +104,6 @@ let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#fnamemod = ':t'
-"  enable/disable detection of whitespace errors.
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#wordcount#format = '%d words'
 let g:airline_section_z = '%3p%% %3l/%L:%3v'
@@ -176,11 +183,9 @@ autocmd CompleteDone * silent! pclose
 
 " == Undotree ==
 nnoremap <leader>ut :UndotreeToggle<cr>
-
 " Put plugins and dictionaries in this dir
 let vimDir = '$HOME/.vim'
 let &runtimepath.=','.vimDir
-
 " Keep undo history across sessions by storing it in a file
 if has('persistent_undo')
   let myUndoDir = expand(vimDir . '/undodir')

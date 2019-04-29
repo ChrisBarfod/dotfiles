@@ -1,9 +1,8 @@
 - link:
-      # create: true
-      # path: config/terminator
-     # ~/.vim: vim
-    # ~/.vimrc:
-      # relink: true
-      # path: vimrc
-    ~/.config/nvim/init.vim: init.vim
-    ~/.zshrc: zshrc
+    ~/.config/nvim/init.vim: 
+      force: true
+      relink: true
+      path: init.vim
+    ~/.zshrc:
+      force: true
+      path: zshrc
