@@ -195,3 +195,15 @@ if has('persistent_undo')
   let &undodir = myUndoDir
   set undofile
 endif
+
+" vimwiki - Personal Wiki for Vim
+set nocompatible
+filetype plugin on
+syntax on
+" vimwiki with markdown support
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+" helppage -> :h vimwiki-syntax 
+
+" vim-instant-markdown - Instant Markdown previews from Vim
+let g:instant_markdown_autostart = 0	" disable autostart
+map <leader>md :InstantMarkdownPreview<CR>
