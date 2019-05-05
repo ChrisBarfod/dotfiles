@@ -123,7 +123,8 @@ let g:airline_mode_map = {
 " == Conoline ==
 let g:conoline_auto_enable = 1
 let g:conoline_color_normal_dark = 'guibg=#1E1E1E'
-let g:conoline_color_insert_dark = 'guibg=#1A1A1A'
+"let g:conoline_color_insert_dark = 'guibg=#1A1A1B'
+let g:conoline_color_insert_dark = 'guibg=#151516'
 
 " == NERDTree ==
 let NERDTreeMinimalUI = 1
@@ -200,12 +201,15 @@ endif
 set nocompatible
 filetype plugin on
 syntax on
+let g:vimwiki_list = [{'path': '$HOME/Dropbox/VimWiki/', 
+      \ 'syntax': 'markdown', 'ext': '.md'}] " set path to a directory inside Dropbox
+
 " vimwiki with markdown support
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+let g:vimwiki_ext = '.md' " set extension to .md
+let g:vimwiki_global_ext = 0 " make sure vimwiki doesn't own all .md files
+"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 " helppage -> :h vimwiki-syntax 
-"let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " vim-instant-markdown - Instant Markdown previews from Vim
-let g:instant_markdown_autostart = 0	" disable autostart
+"let g:instant_markdown_autostart = 0	" disable autostart
 map <leader>md :InstantMarkdownPreview<CR>
