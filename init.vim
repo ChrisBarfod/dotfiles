@@ -7,6 +7,7 @@ endif
 call plug#begin('~/.config/nvim/bundle')
 
 Plug 'vimwiki/vimwiki'
+Plug 'suan/vim-instant-markdown'
 
 " Interface
 Plug 'airblade/vim-gitgutter'
@@ -207,9 +208,9 @@ let g:vimwiki_list = [{'path': '$HOME/Dropbox/VimWiki/',
 " vimwiki with markdown support
 let g:vimwiki_ext = '.md' " set extension to .md
 let g:vimwiki_global_ext = 0 " make sure vimwiki doesn't own all .md files
-"let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 " helppage -> :h vimwiki-syntax 
 
 " vim-instant-markdown - Instant Markdown previews from Vim
-"let g:instant_markdown_autostart = 0	" disable autostart
+let g:instant_markdown_autostart = 0	" disable autostart
 map <leader>md :InstantMarkdownPreview<CR>
