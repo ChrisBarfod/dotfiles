@@ -138,6 +138,8 @@ let g:indentLine_char = '│'
 
 " == Deoplete
 let g:deoplete#enable_at_startup = 1
+inoremap <silent><buffer> <expr><Right> pumvisible() ? deoplete#close_popup() : "<CR>"
+
 
 " == Nerdcommenter ==
 filetype plugin on
@@ -204,6 +206,8 @@ filetype plugin on
 syntax on
 let g:vimwiki_list = [{'path': '$HOME/Dropbox/VimWiki/', 
       \ 'syntax': 'markdown', 'ext': '.md'}] " set path to a directory inside Dropbox
+let g:vimwiki_links_space_char = '_'
+let g:vimwiki_auto_header = 1
 
 " vimwiki with markdown support
 let g:vimwiki_ext = '.md' " set extension to .md
