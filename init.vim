@@ -92,11 +92,6 @@ autocmd VimResized * wincmd = "Auto resize buffers when window is resized
 " Yank to the end of the line
 nnoremap Y y$
 
-" Find current file in NERDTree
-nnoremap <Leader>hf :NERDTreeFind<CR>
-" Open NERDTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
-
 " Exit Nvim Terminal-Mode with Esc key
 tnoremap <Esc> <C-\><C-n> 
 
@@ -145,13 +140,6 @@ let g:conoline_auto_enable = 1
 let g:conoline_color_normal_dark = 'guibg=#1E1E1E'
 "let g:conoline_color_insert_dark = 'guibg=#1A1A1B'
 let g:conoline_color_insert_dark = 'guibg=#151516'
-
-" # TODO remove
-" == NERDTree ==
-"let NERDTreeMinimalUI = 1
-"let NERDTreeDirArrows = 1
-"let NERDTreeQuitOnOpen = 1
-"let NERDTreeAutoDeleteBuffer = 1
 
 " == IndentLine ==
 let g:indentLine_char = '│'
@@ -240,5 +228,5 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown'
 let g:instant_markdown_autostart = 0	" disable autostart
 map <leader>md :InstantMarkdownPreview<CR>
 
-" MixFormat
+" MixFormat - elixir formatting
 let g:mix_format_on_save = 1
