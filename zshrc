@@ -3,6 +3,7 @@
 # =============================================================================
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
+export TERM="xterm-256color"
 
 # asdf package manager
 autoload -Uz compinit && compinit
@@ -19,7 +20,8 @@ if command -v brew >/dev/null 2>&1; then
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
-source /usr/local/etc/profile.d/z.sh
+# TODO install this at home (make automatic)
+#source /usr/local/etc/profile.d/z.sh
 source $HOME/.zsh_profile
 
 # =============================================================================

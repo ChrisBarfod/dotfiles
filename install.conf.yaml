@@ -1,13 +1,14 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
 - link:
-    ~/Dropbox/dotfiles/.gitconfig: gitconfig
-    ~/Development/Projects/dotfiles: 
-      path: ~/Dropbox/dotfiles
-      relink: true
-      force: true
-    ~/.config/nvim/init.vim: 
-      path: init.vim
-      force: true
-      relink: true
-    ~/.zshrc:
-      path: zshrc
-      force: true
+    ~/Development/Projects/dotfiles: ~/Dropbox/dotfiles
+    ~/.config/karabiner.edn: 
+      path: karabiner.edn
+    ~/.gitconfig: gitconfig
+    ~/.config/nvim/init.vim: init.vim
+    ~/.zshrc: zshrc
