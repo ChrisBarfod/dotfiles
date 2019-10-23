@@ -3,3 +3,5 @@
 # Please adapt and uncomment the following lines:
 	name = Chris Barfod
 	email = cbarfod@live.com.au
+[core]
+	editor = /usr/bin/vim
