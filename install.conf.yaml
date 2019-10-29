@@ -7,8 +7,11 @@
 
 - link:
     ~/Development/Projects/dotfiles: ~/Dropbox/dotfiles
-    ~/.config/karabiner.edn: 
-      path: karabiner.edn
+    ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
     ~/.config/nvim/init.vim: init.vim
-    ~/.zshrc: zshrc
+    ~/.config/karabiner.edn: karabiner.edn
+    ~/.config/fish:
+         #path: config/fish/
+         force: true
+    ~/.config/fisher/: fisher

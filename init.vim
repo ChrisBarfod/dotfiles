@@ -73,7 +73,7 @@ set number                 "Line numbers are good
 set number relativenumber  "Relatiive line numbers
 set tabstop=2              "Tab = 2 spaces
 set shiftwidth=0
-set expandtab
+set expandtab "Use spaces instead of tabs"
 set ignorecase "All searches will be case insensitive (need for smartcase)
 set smartcase "Only search case sensative when one uppercase character used
 " Show file options above the command line
@@ -103,8 +103,11 @@ nnoremap <C-l> <C-w>l
 
 " `gf` opens file under cursor in a new vertical split
 nnoremap gf :vertical wincmd f<CR>
+
 " Remap fzf :Files
 map ; :Files<CR>
+
+
 " ================ Plugins Setups ========================
 " Disable Netrw
 let g:loaded_netrwPlugin = 1

@@ -99,7 +99,7 @@ zstyle ":completion:*:default" list-colors ${(s.:.)LS_COLORS}
 DEF_FG=006 
 DEF_BG=235
 
-# Directories
+
 POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_package_name
 POWERLEVEL9K_DIR_PACKAGE_FILES=(package.json composer.json Gemfile )
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
@@ -329,3 +329,5 @@ export PATH="$PATH:/path/to/elixir/bin"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Set Starship as prompt for zsh - this stays at end of file!
+eval "$(starship init zsh)"
