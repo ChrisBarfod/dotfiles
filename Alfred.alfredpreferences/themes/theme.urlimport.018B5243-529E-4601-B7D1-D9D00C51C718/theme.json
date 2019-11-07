@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "#A0A3A8FF",
+        "font" : "American Typewriter Light",
+        "color" : "#616266FF"
+      },
+      "shortcut" : {
+        "size" : 20,
+        "colorSelected" : "#999999FF",
+        "font" : "American Typewriter Light",
+        "color" : "#3F3F3FFF"
+      },
+      "backgroundSelected" : "#212121FF",
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "#CCCCCCFF",
+        "font" : "American Typewriter Light",
+        "color" : "#666666FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 8,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 2,
+      "background" : "#212121FF",
+      "spacing" : 10,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#000000FF",
+        "font" : "American Typewriter Light",
+        "color" : "#E0E0E0FF"
+      },
+      "backgroundSelected" : "#B5D5FFFF"
+    },
+    "window" : {
+      "color" : "#212121FF",
+      "paddingHorizontal" : 10,
+      "width" : 680,
+      "borderPadding" : 10,
+      "borderColor" : "#19191900",
+      "blur" : 0,
+      "roundness" : 12,
+      "paddingVertical" : 10
+    },
+    "credit" : "Stephen Grace",
+    "separator" : {
+      "color" : "#212121FF",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#3A3A3AFF",
+      "thickness" : 2
+    },
+    "name" : "D'Angelo"
+  }
+}
