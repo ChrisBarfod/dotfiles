@@ -1,0 +1,18 @@
+# You need to manually move files into this directory before .install
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/Development/Projects/dotfiles: ~/Dropbox/dotfiles
+    ~/.zshrc: zshrc
+    ~/.gitconfig: gitconfig
+    ~/.config/nvim/init.vim: init.vim
+    ~/.config/karabiner.edn: karabiner.edn
+    ~/.config/fish:
+         #path: config/fish/
+         force: true
+    ~/.config/fisher/: fisher
